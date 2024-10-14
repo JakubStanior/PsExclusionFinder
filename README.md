@@ -26,10 +26,12 @@ Switch `-DisablePopup`, uses registry key `HKCU\Software\Microsoft\Windows\Curre
 First import module into current session.
 `Import-Module .\PsExclusionFinder.ps1`
 
-This example scans the `C:\Users\Example\Documents` directory and its subdirectories up to a depth of 3.
+This example scans the `C:\Users\Example\Documents` directory and its subdirectories up to a depth of 3:
+
 `Get-ExcludedDirectories -Directory "C:\Users\Example\Documents" -Depth 3`
 
-This example scans the `C:\Users\` directory and its subdirectories up to a depth of 4, saves logfile to exclusions_log.txt and disables popup.
+This example scans the `C:\Users\` directory and its subdirectories up to a depth of 4, saves logfile to exclusions_log.txt and disables popup:
+
 `Get-ExcludedDirectories -Directory "C:\Users\" -Depth 4 -LogFile exclusions_log.txt -DisablePopUp`
 
 ## Output
